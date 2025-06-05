@@ -29,7 +29,7 @@ class MainPage extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          const SizedBox(height: 40),
+          const SizedBox(height: 20),
           // Row 1
           Row(
             children: List.generate(9, (index) {
@@ -44,7 +44,7 @@ class MainPage extends StatelessWidget {
               );
             }),
           ),
-          const SizedBox(height: 40),
+          const SizedBox(height: 2),
           // Row 2
           Row(
             children: List.generate(9, (index) {

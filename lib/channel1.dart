@@ -26,7 +26,7 @@ class Channel1 extends StatelessWidget {
             key: Key('Name_frame'),
             width: double.infinity,
             height: 32,
-            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 0),
             clipBehavior: Clip.antiAlias,
             decoration: const BoxDecoration(),
             child: Row(
@@ -39,7 +39,7 @@ class Channel1 extends StatelessWidget {
                   'Channel1',
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 12,
+                    fontSize: 16,
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.w400,
                   ),
@@ -185,7 +185,7 @@ class Channel1 extends StatelessWidget {
                   '00:00:00:00',
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 18,
+                    fontSize: 16,
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.w400,
                   ),
@@ -195,7 +195,7 @@ class Channel1 extends StatelessWidget {
                   '03:18:24:05',
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 18,
+                    fontSize: 16,
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.w400,
                   ),
