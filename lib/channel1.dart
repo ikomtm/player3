@@ -46,29 +46,21 @@ class Channel1 extends StatelessWidget {
                 ),
                 Container(
                   key: Key('settings_frame'),
-                  width: 28,
-                  height: 28,
+                  constraints: BoxConstraints.tightFor(width: 28, height: 28),
                   decoration: ShapeDecoration(
-                    color: const Color(0xFFD5D5D5),
+                    color: Color(0xFFD5D5D5),
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
-                  ),
-                  child: const Stack(
-                    key: Key('settings_dots'),
-                    children: [
-                      Positioned(
-                        left: 9,
-                        top: 7,
-                        child: Text(
-                          '...',
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 12,
-                            fontFamily: 'Inter',
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
+                ),
+                  child: const Center(
+                    child: Text(
+                      '...',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 12,
+                        fontFamily: 'Inter',
+                        fontWeight: FontWeight.w400,
                       ),
-                    ],
+                    ),
                   ),
                 ),
               ],
@@ -193,7 +185,7 @@ class Channel1 extends StatelessWidget {
                   '00:00:00:00',
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 12,
+                    fontSize: 18,
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.w400,
                   ),
@@ -203,7 +195,7 @@ class Channel1 extends StatelessWidget {
                   '03:18:24:05',
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 12,
+                    fontSize: 18,
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.w400,
                   ),
@@ -216,29 +208,25 @@ class Channel1 extends StatelessWidget {
             width: double.infinity,
             height: 124,
             clipBehavior: Clip.antiAlias,
-            decoration: const BoxDecoration(),
-            alignment: Alignment.center,
+            decoration: const BoxDecoration(),            
             child: Stack(
+              alignment: Alignment.center,
               children: [
-                Positioned(
+                Container(                  
                   key: Key('knob'),
-                  left: 3,
-                  top: 2,
-                  child: Container(
-                    width: 120,
-                    height: 120,
-                    decoration: ShapeDecoration(
-                      color: const Color(0xFFCBCBCB),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(17),
-                      ),
+                  width: 120,
+                  height: 120,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFFCBCBCB),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(17),
                     ),
                   ),
                 ),
-                const Positioned(
+                
+                Container(
                   key: Key('knob_label'),
-                  left: 55,
-                  top: 40,
+                  alignment: Alignment.center,
                   child: Text(
                     '1',
                     textAlign: TextAlign.center,
