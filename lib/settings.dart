@@ -24,7 +24,7 @@ class SettingsWindow extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
-            spacing: 10,
+            
             children: [
               Expanded(
                 child: Container(
@@ -315,12 +315,12 @@ class SettingsWindow extends StatelessWidget {
                               ),
                               Expanded(
                                 key: Key('Settings_value_frame'),
-                                child: Container(                                  
+                                child: Container(                                                                    
                                   height: double.infinity,
-                                  clipBehavior: Clip.antiAlias,
+                                  clipBehavior: Clip.antiAlias,                                  
                                   decoration: ShapeDecoration(
-                                    color: const Color(0xFFA1A1A1),
-                                    shape: RoundedRectangleBorder(
+                                    color: const Color(0xFFA1A1A1),                                    
+                                    shape: RoundedRectangleBorder(                                  
                                       borderRadius: BorderRadius.only(
                                         topRight: Radius.circular(12),
                                         bottomRight: Radius.circular(12),
@@ -906,8 +906,8 @@ class SettingsWindow extends StatelessWidget {
                                                 left: 628,
                                                 top: 4,
                                                 child: Container(
-                                                  width: double.infinity,
-                                                  height: double.infinity,
+                                                  width: 102,
+                                                  height: 40,
                                                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                                                   clipBehavior: Clip.antiAlias,
                                                   decoration: ShapeDecoration(
@@ -945,8 +945,8 @@ class SettingsWindow extends StatelessWidget {
                                                 left: 524,
                                                 top: 4,
                                                 child: Container(
-                                                  width: double.infinity,
-                                                  height: double.infinity,
+                                                  width: 102,
+                                                  height: 40,
                                                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                                                   clipBehavior: Clip.antiAlias,
                                                   decoration: ShapeDecoration(
@@ -984,8 +984,8 @@ class SettingsWindow extends StatelessWidget {
                                                 left: 420,
                                                 top: 4,
                                                 child: Container(
-                                                  width: double.infinity,
-                                                  height: double.infinity,
+                                                  width: 102,
+                                                  height: 40,
                                                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                                                   clipBehavior: Clip.antiAlias,
                                                   decoration: ShapeDecoration(
@@ -1023,8 +1023,8 @@ class SettingsWindow extends StatelessWidget {
                                                 left: 316,
                                                 top: 4,
                                                 child: Container(
-                                                  width: double.infinity,
-                                                  height: double.infinity,
+                                                  width: 102,
+                                                  height: 40,
                                                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                                                   clipBehavior: Clip.antiAlias,
                                                   decoration: ShapeDecoration(
@@ -1062,8 +1062,8 @@ class SettingsWindow extends StatelessWidget {
                                                 left: 212,
                                                 top: 4,
                                                 child: Container(
-                                                  width: double.infinity,
-                                                  height: double.infinity,
+                                                  width: 102,
+                                                  height: 40,
                                                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                                                   clipBehavior: Clip.antiAlias,
                                                   decoration: ShapeDecoration(
@@ -1101,8 +1101,8 @@ class SettingsWindow extends StatelessWidget {
                                                 left: 108,
                                                 top: 4,
                                                 child: Container(
-                                                  width: double.infinity,
-                                                  height: double.infinity,
+                                                  width: 102,
+                                                  height: 40,
                                                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                                                   clipBehavior: Clip.antiAlias,
                                                   decoration: ShapeDecoration(
@@ -1140,8 +1140,8 @@ class SettingsWindow extends StatelessWidget {
                                                 left: 4,
                                                 top: 4,
                                                 child: Container(
-                                                  width: double.infinity,
-                                                  height: double.infinity,
+                                                  width: 102,
+                                                  height: 40,
                                                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                                                   clipBehavior: Clip.antiAlias,
                                                   decoration: ShapeDecoration(
