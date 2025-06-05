@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
 class SettingsWindow extends StatelessWidget {
+  const SettingsWindow({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Container(
+          key: Key('Settings_window'),
           width: 1015,
           height: 612,
           padding: const EdgeInsets.all(4),
@@ -17,6 +20,7 @@ class SettingsWindow extends StatelessWidget {
             ),
           ),
           child: Row(
+            key: Key('Settings_subframe'),
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -35,7 +39,8 @@ class SettingsWindow extends StatelessWidget {
                     spacing: 10,
                     children: [
                       Expanded(
-                        child: Container(
+                        key: Key('Table_frame'),
+                        child: Container(                          
                           width: double.infinity,
                           padding: const EdgeInsets.all(10),
                           clipBehavior: Clip.antiAlias,
@@ -46,6 +51,7 @@ class SettingsWindow extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
+                                key: Key('Settings_keys_frame'),
                                 width: 203,
                                 height: double.infinity,
                                 clipBehavior: Clip.antiAlias,
@@ -61,6 +67,7 @@ class SettingsWindow extends StatelessWidget {
                                 child: Stack(
                                   children: [
                                     Positioned(
+                                      key: Key('Name_k_frame'),
                                       left: 8,
                                       top: 13.33,
                                       child: Container(
@@ -88,6 +95,7 @@ class SettingsWindow extends StatelessWidget {
                                       ),
                                     ),
                                     Positioned(
+                                      key: Key('Color_k_frame'),
                                       left: 8,
                                       top: 84.67,
                                       child: Container(
@@ -114,6 +122,7 @@ class SettingsWindow extends StatelessWidget {
                                       ),
                                     ),
                                     Positioned(
+                                      key: Key('FileName_k_frame'),
                                       left: 8,
                                       top: 140,
                                       child: Container(
@@ -140,6 +149,7 @@ class SettingsWindow extends StatelessWidget {
                                       ),
                                     ),
                                     Positioned(
+                                      key: Key('PlayMode_k_frame'),
                                       left: 8,
                                       top: 195.33,
                                       child: Container(
@@ -166,6 +176,7 @@ class SettingsWindow extends StatelessWidget {
                                       ),
                                     ),
                                     Positioned(
+                                      key: Key('Loop_k_frame'),
                                       left: 8,
                                       top: 250.67,
                                       child: Container(
@@ -192,6 +203,7 @@ class SettingsWindow extends StatelessWidget {
                                       ),
                                     ),
                                     Positioned(
+                                      key: Key('FadeIn_k_frame'),
                                       left: 8,
                                       top: 306,
                                       child: Container(
@@ -218,6 +230,7 @@ class SettingsWindow extends StatelessWidget {
                                       ),
                                     ),
                                     Positioned(
+                                      key: Key('FadeOut_k_frame'),
                                       left: 8,
                                       top: 361.33,
                                       child: Container(
@@ -244,6 +257,7 @@ class SettingsWindow extends StatelessWidget {
                                       ),
                                     ),
                                     Positioned(
+                                      key: Key('PlaybackMode_k_frame'),
                                       left: 8,
                                       top: 416.67,
                                       child: Container(
@@ -270,6 +284,7 @@ class SettingsWindow extends StatelessWidget {
                                       ),
                                     ),
                                     Positioned(
+                                      key: Key('PlayRange_k_frame'),
                                       left: 8,
                                       top: 472,
                                       child: Container(
@@ -299,7 +314,8 @@ class SettingsWindow extends StatelessWidget {
                                 ),
                               ),
                               Expanded(
-                                child: Container(
+                                key: Key('Settings_value_frame'),
+                                child: Container(                                  
                                   height: double.infinity,
                                   clipBehavior: Clip.antiAlias,
                                   decoration: ShapeDecoration(
@@ -314,6 +330,7 @@ class SettingsWindow extends StatelessWidget {
                                   child: Stack(
                                     children: [
                                       Positioned(
+                                        key: Key('Play_Range_frame'),
                                         left: 10,
                                         top: 449.11,
                                         child: Container(
@@ -329,6 +346,7 @@ class SettingsWindow extends StatelessWidget {
                                             spacing: 10,
                                             children: [
                                               Container(
+                                                key: Key('Start_textedit_frame'),
                                                 height: double.infinity,
                                                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
                                                 clipBehavior: Clip.antiAlias,
@@ -356,6 +374,7 @@ class SettingsWindow extends StatelessWidget {
                                                 ),
                                               ),
                                               Container(
+                                                key: Key('End_textedit_frame'),
                                                 height: double.infinity,
                                                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
                                                 clipBehavior: Clip.antiAlias,
@@ -383,6 +402,7 @@ class SettingsWindow extends StatelessWidget {
                                                 ),
                                               ),
                                               Container(
+                                                key: Key('Edit_btn_frame'),
                                                 height: double.infinity,
                                                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
                                                 clipBehavior: Clip.antiAlias,
@@ -410,6 +430,7 @@ class SettingsWindow extends StatelessWidget {
                                                 ),
                                               ),
                                               Container(
+                                                key: Key('Reset_btn_frame'),
                                                 height: double.infinity,
                                                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
                                                 clipBehavior: Clip.antiAlias,
@@ -441,6 +462,7 @@ class SettingsWindow extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
+                                        key: Key('Playback_Mode_frame'),
                                         left: 10,
                                         top: 394.22,
                                         child: Container(
@@ -456,6 +478,7 @@ class SettingsWindow extends StatelessWidget {
                                             spacing: 4,
                                             children: [
                                               Container(
+                                                key: Key('Single_btn_frame'),
                                                 width: 100,
                                                 height: double.infinity,
                                                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
@@ -484,6 +507,7 @@ class SettingsWindow extends StatelessWidget {
                                                 ),
                                               ),
                                               Container(
+                                                key: Key('Multi_btn_frame'),
                                                 width: 100,
                                                 height: double.infinity,
                                                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
@@ -516,6 +540,7 @@ class SettingsWindow extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
+                                        key: Key('Fade_Out_frame'),
                                         left: 10,
                                         top: 339.33,
                                         child: Container(
@@ -531,6 +556,7 @@ class SettingsWindow extends StatelessWidget {
                                             spacing: 10,
                                             children: [
                                               Container(
+                                                key: Key('Fade_Out_textedit_frame'),
                                                 width: 50,
                                                 height: double.infinity,
                                                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
@@ -563,6 +589,7 @@ class SettingsWindow extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
+                                        key: Key('Fade_In_frame'),
                                         left: 10,
                                         top: 284.44,
                                         child: Container(
@@ -576,6 +603,7 @@ class SettingsWindow extends StatelessWidget {
                                             spacing: 10,
                                             children: [
                                               Container(
+                                                key: Key('Fade_In_textedit_frame'),
                                                 width: 50,
                                                 height: double.infinity,
                                                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
@@ -608,6 +636,7 @@ class SettingsWindow extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
+                                        key: Key('Loop_frame'),
                                         left: 10,
                                         top: 229.56,
                                         child: Container(
@@ -623,6 +652,7 @@ class SettingsWindow extends StatelessWidget {
                                             spacing: 4,
                                             children: [
                                               Container(
+                                                key: Key('Off_btn_frame'),
                                                 width: 88,
                                                 height: double.infinity,
                                                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
@@ -651,6 +681,7 @@ class SettingsWindow extends StatelessWidget {
                                                 ),
                                               ),
                                               Container(
+                                                key: Key('On_btn_frame'),
                                                 width: 88,
                                                 height: double.infinity,
                                                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
@@ -683,6 +714,7 @@ class SettingsWindow extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
+                                        key: Key('Play_Mode_frame'),
                                         left: 10,
                                         top: 174.67,
                                         child: Container(
@@ -696,6 +728,7 @@ class SettingsWindow extends StatelessWidget {
                                             spacing: 10,
                                             children: [
                                               Container(
+                                                key: Key('Playstop_btn_frame'),
                                                 height: double.infinity,
                                                 padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
                                                 clipBehavior: Clip.antiAlias,
@@ -723,6 +756,7 @@ class SettingsWindow extends StatelessWidget {
                                                 ),
                                               ),
                                               Container(
+                                                key: Key('Playpause_btn_frame'),
                                                 height: double.infinity,
                                                 padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
                                                 clipBehavior: Clip.antiAlias,
@@ -750,6 +784,7 @@ class SettingsWindow extends StatelessWidget {
                                                 ),
                                               ),
                                               Container(
+                                                key: Key('Retrigger_btn_frame'),
                                                 height: double.infinity,
                                                 padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
                                                 clipBehavior: Clip.antiAlias,
@@ -781,6 +816,7 @@ class SettingsWindow extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
+                                        key: Key('File_Name_frame'),
                                         left: 10,
                                         top: 119.78,
                                         child: Container(
@@ -797,6 +833,7 @@ class SettingsWindow extends StatelessWidget {
                                             children: [
                                               Expanded(
                                                 child: Container(
+                                                  key: Key('File_Name_text_frame'),
                                                   height: double.infinity,
                                                   padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 8),
                                                   clipBehavior: Clip.antiAlias,
@@ -824,6 +861,7 @@ class SettingsWindow extends StatelessWidget {
                                                 ),
                                               ),
                                               Container(
+                                                key: Key('Browse_btn_frame'),
                                                 height: double.infinity,
                                                 padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 7),
                                                 decoration: ShapeDecoration(
@@ -853,6 +891,7 @@ class SettingsWindow extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
+                                        key: Key('Color_frame'),
                                         left: 10,
                                         top: 64.89,
                                         child: Container(
@@ -863,6 +902,7 @@ class SettingsWindow extends StatelessWidget {
                                           child: Stack(
                                             children: [
                                               Positioned(
+                                                key: Key('Green_btn_frame'),
                                                 left: 628,
                                                 top: 4,
                                                 child: Container(
@@ -901,6 +941,7 @@ class SettingsWindow extends StatelessWidget {
                                                 ),
                                               ),
                                               Positioned(
+                                                key: Key('Blue_btn_frame'),
                                                 left: 524,
                                                 top: 4,
                                                 child: Container(
@@ -939,6 +980,7 @@ class SettingsWindow extends StatelessWidget {
                                                 ),
                                               ),
                                               Positioned(
+                                                key: Key('Cyan_btn_frame'),
                                                 left: 420,
                                                 top: 4,
                                                 child: Container(
@@ -977,6 +1019,7 @@ class SettingsWindow extends StatelessWidget {
                                                 ),
                                               ),
                                               Positioned(
+                                                key: Key('Magemta_btn_frame'),
                                                 left: 316,
                                                 top: 4,
                                                 child: Container(
@@ -1015,6 +1058,7 @@ class SettingsWindow extends StatelessWidget {
                                                 ),
                                               ),
                                               Positioned(
+                                                key: Key('Red_btn_frame'),
                                                 left: 212,
                                                 top: 4,
                                                 child: Container(
@@ -1053,6 +1097,7 @@ class SettingsWindow extends StatelessWidget {
                                                 ),
                                               ),
                                               Positioned(
+                                                key: Key('Yellow_btn_frame'),
                                                 left: 108,
                                                 top: 4,
                                                 child: Container(
@@ -1091,6 +1136,7 @@ class SettingsWindow extends StatelessWidget {
                                                 ),
                                               ),
                                               Positioned(
+                                                key: Key('None_btn_frame'),
                                                 left: 4,
                                                 top: 4,
                                                 child: Container(
@@ -1133,6 +1179,7 @@ class SettingsWindow extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
+                                        key: Key('Name'),
                                         left: 10,
                                         top: 10,
                                         child: Container(
@@ -1150,6 +1197,7 @@ class SettingsWindow extends StatelessWidget {
                                             spacing: 10,
                                             children: [
                                               Container(
+                                                key: Key('Name_textedit_frame'),
                                                 width: 338,
                                                 height: double.infinity,
                                                 padding: const EdgeInsets.all(4),
@@ -1189,6 +1237,7 @@ class SettingsWindow extends StatelessWidget {
                         ),
                       ),
                       Container(
+                        key:Key('Buttons_frame'),
                         width: double.infinity,
                         height: 50,
                         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
@@ -1201,6 +1250,7 @@ class SettingsWindow extends StatelessWidget {
                           spacing: 17,
                           children: [
                             Container(
+                              key:Key('Save_btn_frame'),
                               width: 120,
                               height: double.infinity,
                               padding: const EdgeInsets.all(4),
@@ -1229,6 +1279,7 @@ class SettingsWindow extends StatelessWidget {
                               ),
                             ),
                             Container(
+                              key:Key('Cancel_btn_frame'),
                               width: 120,
                               height: double.infinity,
                               padding: const EdgeInsets.all(4),

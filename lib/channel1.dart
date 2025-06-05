@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:player3/settings.dart';
 
 class Channel1 extends StatelessWidget {
   final String id;
@@ -44,21 +45,29 @@ class Channel1 extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                   ),
                 ),
-                Container(
-                  key: Key('settings_frame'),
-                  constraints: BoxConstraints.tightFor(width: 28, height: 28),
-                  decoration: ShapeDecoration(
-                    color: Color(0xFFD5D5D5),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
-                ),
-                  child: const Center(
-                    child: Text(
-                      '...',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 12,
-                        fontFamily: 'Inter',
-                        fontWeight: FontWeight.w400,
+                GestureDetector(
+                  onTap: () {
+                    showDialog(
+                      context: context,
+                      builder: (context) => SettingsWindow(),
+                      );
+                  },
+                  child: Container(
+                    key: Key('settings_frame'),
+                    constraints: BoxConstraints.tightFor(width: 28, height: 28),
+                    decoration: ShapeDecoration(
+                      color: Color(0xFFD5D5D5),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
+                  ),
+                    child: const Center(
+                      child: Text(
+                        '...',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 12,
+                          fontFamily: 'Inter',
+                          fontWeight: FontWeight.w400,
+                        ),
                       ),
                     ),
                   ),
